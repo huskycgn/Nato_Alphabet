@@ -22,7 +22,8 @@ while asking:
 
     try:
         output_list = [phonetic_dict[letter] for letter in user_input]
-        print(output_list)
-        asking = False
     except KeyError:
         print('Just letters in the alphabet please!')
+    else:
+        print(output_list)
+        asking = False
